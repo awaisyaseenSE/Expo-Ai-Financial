@@ -29,7 +29,7 @@ export default function LoginScreen() {
   const [passwordError, setPasswordError] = useState("");
   const navigation = useNavigation();
 
-  const { user, setUser } = useAuths();
+  const { setUser } = useAuths();
 
   const handleLogin = async () => {
     if (password === "") {
